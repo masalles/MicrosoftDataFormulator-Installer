@@ -34,19 +34,19 @@ This PowerShell script **automates** the setup of Microsoft Data Formulator, ens
 ### Right-click on "PowerShell", select "Run as Administrator", paste the command, and press "ENTER":  
 ```powershell
 irm "https://raw.githubusercontent.com/masalles/MicrosoftDataFormulator-Installer/refs/heads/main/mdf-installer.ps1" | iex
-
+```
 ## 🔒 Security  
 Always inspect scripts before running them!  
 (Download the script and save it locally before using the command):  
 
 ```powershell
 Get-Content mdf-installer.ps1
-
+```
 If execution is blocked, temporarily allow script execution:  
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope Process -Force
-
+```
 ## ⚠️ Important Notes  
 - Requires Windows 10/11 (tested on version 21H2+).  
 - Backend and frontend should run in separate processes.  
